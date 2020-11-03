@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+    <addon id="script.module.simpleplugin" name="SimplePlugin" version="2.3.4" provider-name="Roman V.M.">
+      <requires>
+        <import addon="xbmc.python" version="2.19.0"/>
+      </requires>
+      <extension point="xbmc.python.module"/>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">SimplePlugin micro-framework</summary>
+        <description lang="en">SimplePlugin micro-framework that simplifies Kodi content plugin programming.</description>
+        <license>GNU GPL v.3</license>
+        <forum>http://forum.kodi.tv/showthread.php?tid=237532</forum>
+        <website>http://romanvm.github.io/script.module.simpleplugin</website>
+        <email>romanvm@yandex.ua</email>
+        <source>https://github.com/romanvm/script.module.simpleplugin</source>
+      </extension>
+    </addon>
+    <addon id="script.module.simpleplugin3" name="SimplePlugin 3" version="3.0.2" provider-name="Roman V.M.">
+      <requires>
+        <import addon="xbmc.python" version="2.19.0"/>
+        <import addon="script.module.future" version="0.16.0.4"/>
+      </requires>
+      <extension point="xbmc.python.module"/>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">SimplePlugin micro-framework</summary>
+        <description lang="en">SimplePlugin micro-framework that simplifies Kodi content plugin programming.</description>
+        <license>GNU GPL v.3</license>
+        <forum></forum>
+        <website>http://romanvm.github.io/script.module.simpleplugin</website>
+        <email>roman1972@gmail.com</email>
+        <source>https://github.com/romanvm/script.module.simpleplugin</source>
+      </extension>
+    </addon>
+    <addon id="script.module.simplemedia" version="1.2.8" name="SimpleMedia" provider-name="vl.maksime">
+        <requires>
+            <import addon="xbmc.python" version="2.19.0"/>
+            <import addon="script.module.simpleplugin3" version="3.0.1"/>
+            <import addon="script.module.requests" version="2.15.1"/>
+        </requires>
+        <extension point="xbmc.python.module"/>
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <license>GPL-3.0-only</license>
+            <forum></forum>
+            <email>vl.maksime@gmail.com</email>
+            <source>https://github.com/vlmaksime/script.module.simplemedia</source>
+        </extension>
+    </addon>
+    <addon id="script.module.pyxbmct" name="PyXBMCt" version="1.1.8" provider-name="Roman_V_M">
+      <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+      </requires>
+      <extension point="xbmc.python.module"/>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">PyXBMCt UI framework</summary>
+        <description lang="en">PyXBMCt is a mini-framework for simple XBMC addon UI buliding. It is similar to PyQt and provides parent windows, a number of UI controls (widgets) and a grid layout manager to place controls.</description>
+        <disclaimer lang="en"></disclaimer>
+        <language></language>
+        <license>GNU GPL v.3</license>
+        <forum>http://forum.xbmc.org/showthread.php?tid=174859</forum>
+        <website>http://romanvm.github.io/PyXBMCt</website>
+        <email>romanvm@yandex.ua</email>
+        <source>https://github.com/romanvm/script.module.pyxbmct</source>
+      </extension>  
+    </addon>
+    <addon id="script.module.inputstreamhelper" version="0.3.3.2" name="InputStream Helper" provider-name="emilsvennesson">
+      <requires>
+        <import addon="xbmc.python" version="2.19.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+      </requires>
+      <extension point="xbmc.python.module"/>
+      <extension point="xbmc.addon.metadata">
+        <description lang="en">A simple Kodi module that makes life easier for add-on developers relying on InputStream based add-ons and DRM playback.</description>
+        <news>2018.02.21 v0.3.3
+            + Load loop if it's a kernel module (thanks to mkreisl)
+            + Fix legacy Widevine CDM update detection
+            + inputstream_addon is now a public variable
+            + Notify user that ARM64 needs 32-bit userspace
+            + Improve logging
+            + Cosmetics
+        </news>
+        <platform>all</platform>
+        <license>MIT License</license>
+        <source>https://github.com/emilsvennesson/script.module.inputstreamhelper</source>
+        <assets>
+          <icon>resources/icon.png</icon>
+        </assets>
+      </extension>
+    </addon>
+    <addon id="plugin.video.tvzavr.ru" version="1.2.0" name="TVZavr" provider-name="vl.maksime">
+        <requires>
+            <import addon="xbmc.python" version="2.19.0"/>
+            <import addon="script.module.m3u8" version="0.2.10"/>
+            <import addon="script.module.simplemedia" version="1.2.3"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource">
+            <provides>video</provides>
+        </extension>
+        <extension point="xbmc.service"/>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="ru">TVzavr.ru — международный интернет-кинотеатр, который появился на рынке в 2010 году.</summary>
+            <description lang="ru">Интернет-кинотеатр tvzavr - легальный просмотр фильмов, сериалов и мультфильмов на любой вкус в HD и Full HD качестве.</description>
+            <disclaimer lang="ru">Онлайн-кинотеатр TVzavr.ru</disclaimer>
+            <language>ru</language>
+            <platform>all</platform>
+            <license>GPL-3.0-only</license>
+            <forum>http://xbmc.ru/forum/showthread.php?t=14182</forum>
+            <website>http://www.tvzavr.ru/</website>
+            <email>vl.maksime@gmail.com</email>
+            <source>https://github.com/vlmaksime/plugin.video.tvzavr.ru</source>
+            <news>v1.2.0 (2019-08-28)[CR]- Обновлена ссылка для работы с UnitedSearch. Для корректного поиска необходимо сбросить настройки дополнения[CR]- Реализована синхронизация времени просмотра из ресурса в Kodi[CR]- Добавлен раздел "Подборки"[CR]- Реализован вывод пометок о просмотре по данным ресурса и вывод пользовательской оценки[CR]- Мелкие исправления и оптимизация[CR][CR]v1.1.0 (2019-08-01)[CR]- Добавлена возможность авторизации по коду устройства[CR]- Обновлены логотип и фанарт[CR]- Добавлен раздел "Просмотренно". Реализовано заполнение раздела просмотренным контентом[CR]- Реализована синхронизация времени просмотра из Kodi на ресурсе[CR]- Добавлено контекстное меню для управляения разделами "Избранное", "Просмотренное", "Поиск"[CR]- Мелкие исправления и оптимизация</news>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.jpg</fanart>
+                <screenshot>media\screenshot-01.jpg</screenshot>
+                <screenshot>media\screenshot-02.jpg</screenshot>
+                <screenshot>media\screenshot-03.jpg</screenshot>
+            </assets>
+        </extension>
+    </addon>
+    <addon id="plugin.video.united.search" version="0.2.5" name="United Search" provider-name="vl.maksime">
+        <requires>
+            <import addon="xbmc.python" version="2.19.0"/>
+            <import addon="script.module.simpleplugin" version="2.2.0"/>
+            <import addon="script.module.simplejson" version="3.3.0"/>
+            <import addon="script.module.pyxbmct" version="1.1.8" />
+        </requires>
+        <extension point="xbmc.python.pluginsource">
+            <provides>video</provides>
+        </extension>
+        <extension point="kodi.context.item"/>
+        <extension point="xbmc.python.module"/>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en">Unified search for video add-ons</summary>
+            <summary lang="ru">Единый поиск для видеодополнений</summary>
+            <description lang="en">This add-on is intended for search in other video add-ons</description>
+            <description lang="ru">Дополнение предназначено для выполнения поиска в других видеодополнениях</description>
+            <disclaimer lang="en"></disclaimer>
+            <disclaimer lang="ru"></disclaimer>
+            <language></language>
+            <platform>all</platform>
+            <license>GPL-3.0-only</license>
+            <forum>http://xbmc.ru/forum/showthread.php?t=14278</forum>
+            <email>vl.maksime@gmail.com</email>
+            <source>https://github.com/vlmaksime/plugin.video.united.search</source>
+            <news>v0.2.5 (2019-08-09)[CR]- Добавлена поддержка "красивых ссылок"[CR][CR]v0.2.4 (2018-10-21)[CR]- Исправлены выявленные ошибки[CR][CR]v0.2.3 (2018-10-07)[CR]- Пункты контекстного меню вынесены в отдельные дополнения[CR][CR]v0.2.2 (2017-07-02)[CR]- Доработан механизм обучения и поиска в дополнениях без встроенной поддержки</news>
+            <assets>
+                <icon>icon.png</icon>
+                <screenshot>media\screenshot-01.jpg</screenshot>
+                <screenshot>media\screenshot-02.jpg</screenshot>
+                <screenshot>media\screenshot-03.jpg</screenshot>
+                <screenshot>media\screenshot-04.jpg</screenshot>
+                <screenshot>media\screenshot-05.jpg</screenshot>
+            </assets>
+        </extension>
+    </addon>
+	<addon id="weather.gismeteo" version="0.5.2" name="Gismeteo" provider-name="vl.maksime">
+		<requires>
+			<import addon="xbmc.python" version="2.19.0"/>
+			<import addon="script.module.future" version="0.16.0.4"/>
+			<import addon="script.module.simpleplugin3" version="3.0.1"/>
+			<import addon="script.module.requests" version="2.15.1"/>
+		</requires>
+		<extension point="xbmc.python.weather"/>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">Gismeteo Weather Forecast. Real time weather and detailed forecast all round the world</summary>
+			<summary lang="ru">Прогноз погоды от ведущего погодного сервиса Gismeteo</summary>
+			<summary lang="sp">Pronóstico del tiempo Gismeteo. Clima en tiempo real y pronóstico detallado en todo el mundo</summary>
+			<description lang="en">The weather is provided solely for personal non-commercial use</description>
+			<description lang="ru">Погода предоставлена исключительно для личного некоммерческого использования</description>
+			<description lang="sp">El clima se proporciona únicamente para su uso personal y no comercial</description>
+			<disclaimer lang="en">The weather forecast has been prepared by MapMakers Group Ltd</disclaimer>
+			<disclaimer lang="ru">Прогноз погоды подготовлен НПЦ "Мэп Мейкер"</disclaimer>
+			<disclaimer lang="sp">El pronóstico del tiempo ha sido preparado por MapMakers Group Ltd</disclaimer>
+			<platform>all</platform>
+			<license>GPL-3.0-only</license>
+			<forum>http://xbmc.ru/forum/showthread.php?t=14692</forum>
+			<website>https://www.gismeteo.ru/</website>
+			<email>vl.maksime@gmail.com</email>
+			<source>https://github.com/vlmaksime/weather.gismeteo</source>
+			<news>v0.5.2 (2020-10-15)[CR]- Исправлена ошибка разбора данных XML</news>
+			<assets>
+				<icon>icon.png</icon>
+			</assets>
+		</extension>
+	</addon>
+    <addon id="plugin.video.russiatv1" version="0.2.2" name="Россия 1" provider-name="vl.maksime">
+        <requires>
+            <import addon="xbmc.python" version="2.19.0"/>
+            <import addon="script.module.requests" version="2.12.4"/>
+            <import addon="script.module.simpleplugin" version="2.3.2"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource">
+            <provides>video</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en">"Россия 1" is an unofficial add-on of the All-Russian State TV and Radio Company for KODI.</summary>
+            <summary lang="ru">"Россия 1" - неофициальное дополнение Всероссийской государственной телерадиокомпании для KODI.</summary>
+            <description lang="en">- With the addition, you will not miss any favorite TV series, film or program! [CR] - If you want to keep abreast of all the events occurring both in Russia and in the world, then the latest issues of the "News" program are what you need! Look and learn new things!</description>
+            <description lang="ru">- С дополнением вы не пропустите ни одного любимого сериала, фильма или передачи! Для вас приготовлен бесплатный доступ не только к постоянно обновляющемуся контенту, но и крупнейшему видеоархиву телеканала "Россия 1".[CR]- Если вы хотите быть в курсе всех событий, происходящих как в России, так и в мире, тогда свежие выпуски программы "Вести" то, что вам нужно! Смотри и узнавай новое!</description>
+            <disclaimer lang="en">Come in add-on to "Russia 1", we always have something to see!</disclaimer>
+            <disclaimer lang="ru">Заходите в дополнение "Россия 1", у нас всегда есть, что посмотреть!</disclaimer>
+            <language>ru</language>
+            <platform>all</platform>
+            <license>GPL-3.0-only</license>
+            <forum>http://xbmc.ru/forum/showthread.php?t=14828</forum>
+            <website>https://russia.tv/</website>
+            <email>vl.maksime@gmail.com</email>
+            <source>https://github.com/vlmaksime/plugin.video.russiatv1</source>
+            <news>v0.2.2 (2019-03-03)[CR]- Учтены изменения в API ресурса[CR][CR]v0.2.1 (2018-01-09)[CR]- Учтены изменения в API ресурсаv[CR][CR]0.1.5 (2018-01-09)[CR]- Оптимизация[CR]- Реализовано получение актерского состава из описания[CR]- В описании материала добавлена возможность просмотреть трейлер</news>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.png</fanart>
+                <screenshot>media\screenshot-01.jpg</screenshot>
+                <screenshot>media\screenshot-02.jpg</screenshot>
+                <screenshot>media\screenshot-03.jpg</screenshot>
+            </assets>
+        </extension>
+    </addon>
+    <addon id="plugin.video.ntv.ru" version="0.2.2" name="НТВ" provider-name="vl.maksime">
+        <requires>
+            <import addon="xbmc.python" version="2.19.0"/>
+            <import addon="script.module.requests" version="2.12.4"/>
+            <import addon="script.module.simplemedia" version="1.0.5"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource">
+            <provides>video</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en"></summary>
+            <summary lang="ru">"НТВ" - является неофициальным дополнением для KODI.</summary>
+            <description lang="en"></description>
+            <description lang="ru">Дополнение позволяет смотреть самые качественные передачи, шоу, новости, сериалы, кино от ведущего российского телеканала. Более 24 часов видео ежедневно, днем и ночью. С помощью приложения вы сможете в любой момент быть в курсе всех событий, смотреть прямой телеэфир НТВ, полные выпуски и архив всех передач, которые когда-либо были показаны на экране.</description>
+            <disclaimer lang="en"></disclaimer>
+            <disclaimer lang="ru">Присоединитесь к миллионам посетителей НТВ.Ru!</disclaimer>
+            <language>ru</language>
+            <platform>all</platform>
+            <license>GPL-3.0-only</license>
+            <forum>http://xbmc.ru/forum/showthread.php?t=14937</forum>
+            <website>http://www.ntv.ru/</website>
+            <email>vl.maksime@gmail.com</email>
+            <source>https://github.com/vlmaksime/plugin.video.ntv.ru</source>
+            <news>v0.2.2 (2019-08-15)[CR]- Исправлены выявленные ошибки[CR][CR]v0.2.1 (2018-02-25)[CR]- Учтены изменения в API ресурса[CR][CR]v0.1.1 (2018-02-25)[CR]- Публичный релиз</news>
+            <assets>
+                <icon>icon.png</icon>
+            </assets>
+        </extension>
+    </addon>
+    <addon id="script.module.api.videomore.ru" version="1.0.3" name="API videomore.ru" provider-name="vl.maksime">
+        <requires>
+            <import addon="xbmc.python" version="2.19.0"/>
+            <import addon="script.module.requests" version="2.12.4"/>
+        </requires>
+        <extension point="xbmc.python.module"/>
+        <extension point="xbmc.addon.metadata">
+            <language></language>
+            <platform>all</platform>
+            <license>GPL-3.0-only</license>
+            <website>https://videomore.ru</website>
+            <email>vl.maksime@gmail.com</email>
+            <source>https://github.com/vlmaksime/script.module.api.videomore.ru</source>
+        </extension>
+    </addon>
+    <addon id="plugin.video.domashniy.ru" version="1.1.1" name="Dомашний" provider-name="vl.maksime">
+        <requires>
+            <import addon="xbmc.python" version="2.19.0"/>
+            <import addon="script.module.simplemedia" version="1.0.5"/>
+            <import addon="script.module.api.videomore.ru" version="1.0.2"/>
+            <import addon="script.module.inputstreamhelper" version="0.3.3"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource">
+            <provides>video</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en"></summary>
+            <summary lang="ru">Просмотр сереалов, шоу и передач, опубликованных на сайте телеканала "Домашний"</summary>
+            <description lang="en"></description>
+            <description lang="ru"></description>
+            <disclaimer lang="en"></disclaimer>
+            <disclaimer lang="ru"></disclaimer>
+            <language>ru</language>
+            <platform>all</platform>
+            <license>GPL-3.0-only</license>
+            <forum>http://xbmc.ru/forum/showthread.php?t=15080</forum>
+            <website>https://domashniy.ru</website>
+            <email>vl.maksime@gmail.com</email>
+            <source>https://github.com/vlmaksime/plugin.video.domashniy.ru</source>
+            <news>v1.1.0 (2018-04-22)[CR]- Реализован запуск DRM видео</news>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.jpg</fanart>
+            </assets>
+        </extension>
+    </addon>
+    <addon id="plugin.video.videomore.ru" version="1.2.0" name="Videomore" provider-name="vl.maksime">
+        <requires>
+            <import addon="xbmc.python" version="2.19.0"/>
+            <import addon="script.module.simplemedia" version="1.0.5"/>
+            <import addon="script.module.api.videomore.ru" version="1.0.2"/>
+            <import addon="script.module.inputstreamhelper" version="0.3.3"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource">
+            <provides>video</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en"></summary>
+            <summary lang="ru"></summary>
+            <description lang="en"></description>
+            <description lang="ru"></description>
+            <disclaimer lang="en"></disclaimer>
+            <disclaimer lang="ru"></disclaimer>
+            <language>ru</language>
+            <platform>all</platform>
+            <license>GPL-3.0-only</license>
+            <forum>http://xbmc.ru/forum/showthread.php?t=15103</forum>
+            <website>https://videomore.ru</website>
+            <email>vl.maksime@gmail.com</email>
+            <source>https://github.com/vlmaksime/plugin.video.videomore.ru</source>
+            <news>v1.2.0 (2019-03-11)[CR]- Адаптирован для работы с Kodi 18[CR][CR]v1.1.0 (2018-04-22)[CR]- Дополнение переписано с нуля[CR]- Реализовано воспроизведение DRM видео</news>
+            <assets>
+                <icon>icon.png</icon>
+            </assets>
+        </extension>
+    </addon>
+    <addon id="plugin.video.tvigle.ru" version="2.0.1" name="Tvigle" provider-name="vl.maksime">
+        <requires>
+            <import addon="xbmc.python" version="2.19.0"/>
+            <import addon="script.module.future" version="0.16.0.4"/>
+            <import addon="script.module.simplemedia" version="1.2.4"/>
+            <import addon="script.module.pyjwt" version="1.6.4"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource">
+            <provides>video</provides>
+        </extension>
+        <extension point="xbmc.service"/>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en">Tvigle - it's your favorite movies, TV shows, soviet cartoons, modern cartoons online for free.</summary>
+            <summary lang="ru">Tvigle – это любимые фильмы, сериалы, советские мультфильмы, современные мультики, программы, ТВ-шоу онлайн и бесплатно.</summary>
+            <description lang="en">Several million people are already looking Tvigle online and on Smart TV. Install this plugin and watch movies, TV shows, cartoons online in HD quality.[CR]The main advantage of Tvigle - 99% of movies and TV shows free of charge.</description>
+            <description lang="ru">Несколько миллионов пользователей уже смотрят Tvigle на сайте и в приложениях Smart TV. Установите это дополнение и смотрите фильмы, сериалы, мультфильмы online в HD качестве.[CR]Главное преимущество Tvigle – 99% фильмов и сериалов бесплатные.</description>
+            <disclaimer lang="en">Now in your TV</disclaimer>
+            <disclaimer lang="ru">Теперь в твоем телевизоре</disclaimer>
+            <language>ru</language>
+            <platform>all</platform>
+            <license>GPL-3.0-only</license>
+            <forum>http://xbmc.ru/forum/showthread.php?t=15151</forum>
+            <website>http://www.tvigle.ru/</website>
+            <email>vl.maksime@gmail.com</email>
+            <source>https://github.com/vlmaksime/plugin.video.tvigle.ru</source>
+            <news>v2.0.1 (2019-10-20)[CR]- Восстановлена работа дополнения с использованием нового API[CR]- Добавлена возможность авторизации[CR]- Для авторизованных пользователей реализована загрузка разделов "Избранное" и "Просмотренное"[CR]- Для авторизованных пользователей реализована синхронизация времени и статуса просмотра между Kodi и сайтом</news>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.jpg</fanart>
+                <screenshot>media\screenshot-01.jpg</screenshot>
+                <screenshot>media\screenshot-02.jpg</screenshot>
+                <screenshot>media\screenshot-03.jpg</screenshot>
+            </assets>
+        </extension>
+    </addon>
+    <addon id="plugin.video.ivi.client" version="1.1.6" name="ivi" provider-name="vl.maksime">
+        <requires>
+            <import addon="xbmc.python" version="2.19.0"/>
+            <import addon="script.module.simplemedia" version="1.2.8"/>
+            <import addon="script.module.inputstreamhelper" version="0.3.3"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource">
+            <provides>video</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en"></summary>
+            <summary lang="ru">Онлайн-кинотеатр ivi</summary>
+            <description lang="en"></description>
+            <description lang="ru">Смотрите ваши любимые фильмы и сериалы на большом экране вашего ТВ.[CR]Доступ к огромному каталогу фильмов и сериалов для бесплатного просмотра в один клик.[CR]Смотрите в HD качестве на большом экране вашего телевизора.</description>
+            <disclaimer lang="en"></disclaimer>
+            <disclaimer lang="ru">Самая большая в России легальная фильмотек</disclaimer>
+            <language>ru</language>
+            <platform>all</platform>
+            <license>GPL-3.0-only</license>
+            <forum>http://xbmc.ru/forum/showthread.php?t=15328</forum>
+            <website>https://www.ivi.ru/</website>
+            <email>vl.maksime@gmail.com</email>
+            <source>https://github.com/vlmaksime/plugin.video.ivi.client</source>
+            <news>v1.1.6 (2020-10-29)[CR]- Исправлена ошибка авторизации на сервисе[CR][CR]v1.1.5 (2020-10-29)[CR]- Исправлена инициализация при новой установке</news>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.jpg</fanart>
+            </assets>
+        </extension>
+    </addon>
+    <addon id="script.module.pyjwt" name="pyjwt" provider-name="jpadilla (hello@jpadilla.com)" version="1.6.4">
+        <requires>
+            <import addon="xbmc.python" version="2.19.0" />
+        </requires>
+        <extension point="xbmc.python.module" />
+        <extension point="xbmc.addon.metadata">
+            <description lang="en">pyjwt module</description>
+            <summary lang="en">pyjwt module</summary>
+            <license>MIT</license>
+            <platform>all</platform>
+            <website>https://pyjwt.readthedocs.io</website>
+            <source>https://github.com/jpadilla/pyjwt</source>
+        </extension>
+    </addon>
+	<addon id="resource.images.weatherprovidericons.gismeteo" name="Weather Provider Icons - Gismeteo" version="0.1.1" provider-name="vl.maksime">
+		<extension point="kodi.resource.images" compile="false" type="weatherprovidericons" />
+		<requires>
+			<import addon="kodi.resource" version="1.0.0"/>
+		</requires>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">Gismeteo Weather Provider Icons</summary>
+			<description lang="en">Weather icon pack created from Gismeteo Provider icons</description>
+			<platform>all</platform>
+			<license>CC-BY-3.0</license>
+		</extension>
+	</addon>
+</addons>
