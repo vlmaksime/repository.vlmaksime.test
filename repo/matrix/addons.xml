@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-    <addon id="script.module.simpleplugin3" name="SimplePlugin 3" version="3.0.2+matrix.3" provider-name="Roman V.M.">
+    <addon id="script.module.simpleplugin3" name="SimplePlugin 3" version="3.0.2+matrix.4" provider-name="Roman V.M.">
       <requires>
         <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.future" version="0.16.0.4"/>
+        <import addon="script.module.future" version="0.17.1"/>
       </requires>
       <extension point="xbmc.python.module"/>
       <extension point="xbmc.addon.metadata">
